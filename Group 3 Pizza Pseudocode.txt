@@ -1,0 +1,81 @@
+Pseudocode
+
+Team Members:
+Divine Isibor
+Ahmed Zihni
+Amanda Mercado
+Dominick Garcia
+
+start
+
+	display group members
+	
+
+	display "Group 3 Pizza Ordering System"
+	display "Pizza Prices"
+	display "Small Pizza: $15"
+	display "Medium Pizza: $20"
+	display "Large Pizza: $25"
+	display "Pepperoni Topping: $2 (Small), $3 (Medium/Large)"
+	display "Extra Cheese: $1 (All sizes)"
+	
+
+	input pizzaSize
+	convert size letter to uppercase
+
+	while pizzaSize is not S, M, L
+		display "Invalid size. Enter S, M, L"
+		input pizzaSize
+		convert pizzaSize to uppercase
+
+
+	input pepperoniChoice
+	convert pepperoniChoice to uppercase
+
+	while pepperoniChoice is not Y/N
+		display "Invalid input. Enter Y or N"
+		input pepperoniChoice
+		convert pepperoniChoice to uppercase
+
+
+	input cheeseChoice
+	convert cheeseChoice to uppercase
+
+
+	while cheeseChoice is not Y/N
+		display "Invalid input. Enter Y or N"
+		input cheeseChoice
+		convert cheeseChoice to uppercase
+
+	
+	look up basePrice using pizzaSize
+	set total = basePrice
+
+	
+	set pepperoniPrice = 0
+	if pepperoniChoice equals Y
+		look up pepperoniPrice using pizzaSize
+		set total = total + pepperoniPrice
+
+
+	set cheesePrice = 0
+	if cheeseChoice equals Y
+		look up cheesePrice using pizzaSize
+		set total = total + cheesePrice
+
+
+	display "Order Summary"
+	display pizzaSize
+	display pepperoniChoice
+	display cheeseChoice
+	display total
+
+	display "thanks"
+
+stop
+
+
+citations: 
+MindTap - Cengage Learning. (2025). Cengage.com. https://ng.cengage.com/static/nb/ui/evo/index.html?deploymentId=6126111928014095701185656904&eISBN=9780357880920&id=2631498715&snapshotId=4918864&
+
+GeeksforGeeks. (2018b, December 18). How to write a Pseudo Code? GeeksforGeeks. https://www.geeksforgeeks.org/dsa/how-to-write-a-pseudo-code/
